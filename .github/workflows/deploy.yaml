@@ -45,22 +45,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://registry.npmjs.org/
-          cache: pnpm # 或 pnpm / yarn
-
-      - name: 安装 pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          run_install: true
-          version: 8
 
       # 下载依赖
-      - name: Install dependencies
-        run: pnpm install # 或 pnpm install / yarn install / bun install
+      - name: 下载依赖
+        run: npm install # 或 pnpm install / yarn install / bun install
 
       # 打包依赖
-      - name: Build with VitePress
-        run: pnpm run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: 打包
+        run: npm run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
 
       # 上传到github page 中
       - name: Upload artifact
