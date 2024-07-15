@@ -39,7 +39,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-          uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
 
       # 设置 node 版本
       - name: Use Node.js v20
@@ -47,11 +46,11 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-          cache: pnpm # 或 pnpm / yarn
+          cache: npm # 或 pnpm / yarn
       
       # 下载依赖
       - name: Install dependencies
-        run: pnpm install # 或 pnpm install / yarn install / bun install
+        run: npm install # 或 pnpm install / yarn install / bun install
 
       # 打包依赖
       - name: Build with VitePress
