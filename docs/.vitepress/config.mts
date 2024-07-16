@@ -15,9 +15,9 @@ export default defineConfig({
       {
         text: "spring-boot-demo",
         items: [
-          { text: "Item A", link: "/demo-1" },
-          { text: "Item B", link: "/demo-2" },
-          { text: "Item C", link: "/demo-3" },
+          { text: "demo1", link: "/markdown-examples/demo-1" },
+          { text: "demo2", link: "/markdown-examples/demo-2" },
+          { text: "demo3", link: "/markdown-examples/demo-3" },
         ],
       },
     ],
