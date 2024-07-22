@@ -58,6 +58,16 @@ const sidebar = [
       { text: "Runtime API Examples", link: "/api-examples" },
     ],
   },
+  {
+    text: "spring boot demo",
+    items: [
+      {
+        text: "Markdown Examples",
+        link: "/spring-boot-demo/第01期：Java 环境安装",
+      },
+      { text: "Runtime API Examples", link: "/api-examples" },
+    ],
+  },
 ];
 
 export { nav, sidebar };
